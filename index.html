@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pat Shop</title>
+  <link rel="stylesheet" href="style.css">
+<!--tailwind CDN V 4.0 -->
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<!--tailwind config -->
+<style type="text/tailwindcss">
+  @theme {
+    --color-clifford: #da373d;
+    --color-primaryCol: #FFDC26;
+    --color-secCol: #F9DF8A;
+  }
+</style>
+<!-- DaisyUI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- font Class -->
+<style>
+  .adlam-font {
+  font-family: "ADLaM Display", serif;
+}
+.sora-font {
+  font-family: "Sora", serif;
+}
+</style>
+
+<!--fontawesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="sora-font md:container mx-auto">
+<!-- nav -->
+<nav class="
+flex justify-between items-center lg:py-7 lg:px-0 lg:border-0  
+px-3 py-4 border-2  border-b-[#111111]
+">
+  <div class="logo flex items-center">
+    <img src="./c1-assets/logo-header.png" alt="logo" class="pr-2">
+    <h1 class="">Browse<span class="text-primaryCol">4</span>Pets </h1>
+  </div>
+  <div class="navitmes hidden lg:flex ">
+    <a href="" class="pr-8 text-xl">Find a pet</a>
+    <a href="" class="pr-8 text-xl">Breeds</a>
+    <a href="" class="pr-8 text-xl">Contact us</a>
+  </div>
+  <div class="navBtn hidden lg:flex ">
+    <img src="./c1-assets/bell (1) 1.svg" class=" mr-4">
+    <img src="./c1-assets/search (2) 1.svg" class=" mr-4">
+    <a href="" class="  text-xl px-8 py-3 mr-4 border-2 border-[#FFDC26] rounded-lg ">Login</a>
+    <a href="" class="bg-primaryCol text-xl px-8 py-3 mr-4 rounded-lg">Register</a>
+  </div>
+
+  <div class="hamber lg:hidden">
+    <i class="fa-solid fa-bars text-3xl"></i>
+  </div>
+</nav>
+<!-- header Section -->
+<section class="px-4 lg:px-0 headerSe bg-[url(./c1-assets/cat-big.png)] bg-no-repeat bg-bottom lg:bg-center bg-contain h-96 lg:h-screen">
+  <h1 class="adlam-font text-3xl lg:text-5xl mt-8 lg:mt-24 mb-4 ">Pamper Your Pet,<br>
+    Because They Deserve <br>
+    the Bes</h1>
+  <p class="text-base lg:text-xl w-96 lg:w-auto mb-8">Discover a world of treats, toys, and essentials handpicked for <br> 
+    your furry friends. Shop now and make tails wag with joy!</p>
+  <a href="" class="bg-primaryCol text-xl px-8 py-3 mr-4 rounded-lg">Find a pet</a>
+</section>
+
+</header>
+
+<main class="sora-font md:container mx-auto px-4 lg:px-0">
+<!-- Categories Section -->
+<section class="categories my-14 lg:my-36">
+  <h2 class="adlam-font text-2xl lg:text-4xl mb-8 lg:mb-12">
+    Browse By Categories
+  </h2>
+  <div class="cateCards grid grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-6">
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/dog-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Dog</h5>
+        <p class="text-base">3 items</p>
+      </div>
+    </div>
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl
+    flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/fish-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Fish</h5>
+        <p class="text-base">3 items</p>
+      </div>
+    </div>
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/cat-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Cat</h5>
+        <p class="text-base">3 items</p>
+      </div>
+    </div>
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/bird-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Bird</h5>
+        <p class="text-base">3 items</p>
+      </div>
+    </div>
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/mouse-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Small pet</h5>
+        <p class="text-base">3 items</p>
+      </div>
+    </div>
+    <div class="careCard bg-secCol w-52 h-64 rounded-xl flex flex-col justify-evenly items-center">
+      <div class="img">
+        <img src="./c1-assets/rabbit-cartoon.png" alt="" class=" bg-white p-7 rounded-full">
+      </div>
+      <div class="cardText">
+        <h5 class="adlam-font text-xl mb-3">Rabbit</h5>
+        <p class="text-base">2 items</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Trending Pet Products -->
+<section class="my-14
+lg:mt-64 lg:mb-72">
+  <h2 class="adlam-font text-2xl lg:text-4xl mb-8 lg:mb-12">
+    Trending Pet Products
+  </h2>
+<div class="productCards">
+  <div class="mainCard w-[360px] h-[340px] lg:w-[424px] lg:h-[402px]
+  
+  bg-secCol bg-[url(./c1-assets/cute-pet-small.png)] bg-no-repeat bg-right-bottom ">
+    <h3 class="pt-20 text-2xl lg:text-4xl ">T-Shirt For Dogs</h3>
+    <p class="">Discover a world of treats, toys, and <br>
+    essentials handpicked for</p>
+    <a href="" class="btn">Shop Now</a>
+  </div>
+  <div class="cards"></div>
+</div>
+</section>
+</main>
+
+<footer></footer>
+</body>
+</html>
